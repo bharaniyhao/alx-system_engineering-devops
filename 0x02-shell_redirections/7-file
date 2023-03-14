@@ -1,8 +1,4 @@
 #!/bin/bash
-
-touch $'*\\\'\'Best School\'\\\'\'*$?******:)'
-
-# Add the text "Best School" to the file
 echo "Best School" > $'*\\\'\'Best School\'\\\'\'*$?******:)'
 echo "" >> $'*\\\'\'Best School\'\\\'\'*$?******:)'
 
