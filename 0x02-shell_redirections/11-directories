@@ -1,17 +1,2 @@
 #!/bin/bash
-
-# Initialize counter variable
-count=0
-
-# Loop through all directories (including hidden ones) in the current directory
-for dir in $(find . -mindepth 1 -maxdepth 1 -type d | tr '\n' ' '); do
-  # Ignore the current and parent directories
-  if [ "$dir" != "." ] && [ "$dir" != ".." ]; then
-    # Increment counter variable
-    (( count++ ))
-  fi
-done
-
-# Print the count of directories and sub-directories
-echo "The current directory has $count directories and sub-directories."
-
+ls -t | head 
